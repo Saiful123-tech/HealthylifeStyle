@@ -9,21 +9,21 @@ export class ProductService {
 
   constructor(private http:HttpClient) { }
   addProduct(data:product){
-   return this.http.post('https://localhost:7003/api/Admin/AddProduct',data)
+   return this.http.post('https://healthylifestyleapi.azurewebsites.net/api/Admin/AddProduct',data)
   }
   
   getProducts(){
-    return this.http.get<product[]>('https://localhost:7003/api/Admin/GetProducts');
+    return this.http.get<product[]>('https://healthylifestyleapi.azurewebsites.net/api/Admin/GetProducts');
   }
 
   searchProducts(value:string){
-    return this.http.get<product[]>(`https://localhost:7003/api/Admin/searchProducts/${value}`);
+    return this.http.get<product[]>(`https://healthylifestyleapi.azurewebsites.net/api/Admin/searchProducts/${value}`);
   }
   redirectToDetails(id:number){
-    return this.http.get<product[]>(`https://localhost:7003/api/Admin/GetProductById/${id}`)
+    return this.http.get<product[]>(`https://healthylifestyleapi.azurewebsites.net/api/Admin/GetProductById/${id}`)
   }
 
   orderByPrice(order:string){
-    return this.http.get<product[]>(`https://localhost:7003/api/Admin/OrderByPrice/${order}`);
+    return this.http.get<product[]>(`https://healthylifestyleapi.azurewebsites.net/api/Admin/OrderByPrice/${order}`);
   }
 }

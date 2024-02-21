@@ -12,33 +12,33 @@ export class TrainerService {
    isLoginError = new EventEmitter<boolean>(false)
   constructor(private http:HttpClient,private Route:Router) { }
   SignUp(data:trainer){
-  return this.http.post('https://localhost:7003/api/trainer/Create',data);
+  return this.http.post('https://healthylifestyleapi.azurewebsites.net/api/trainer/Create',data);
   }
 
   Login(data:trainer){
     console.warn(`http://localhost:3000/trainer?user=${data.user}&psw=${data.psw}`)
-    return this.http.get(`https://localhost:7003/api/trainer/LoginTrainer?userName=${data.user}&password=${data.psw}`);
+    return this.http.get(`https://healthylifestyleapi.azurewebsites.net/api/trainer/LoginTrainer?userName=${data.user}&password=${data.psw}`);
     
 
     }
   
   Selectiontrainer(data:any){
-   return this.http.get<trainer[]>(`https://localhost:7003/api/trainer/GetTrainerBycat/${data.cat}`);
+   return this.http.get<trainer[]>(`https://healthylifestyleapi.azurewebsites.net/api/trainer/GetTrainerBycat/${data.cat}`);
   }
   UpdateData(id:any){
     console.warn(id);
-    return this.http.get<trainer>(`https://localhost:7003/api/trainer/GetTrainer/${id}`);
+    return this.http.get<trainer>(`https://healthylifestyleapi.azurewebsites.net/api/trainer/GetTrainer/${id}`);
   }
   UpdateTrainer(data:trainer,id:string | null){
     console.warn(id)
-    return this.http.put<trainer>(`https://localhost:7003/api/trainer/Update/${id}`,data)
+    return this.http.put<trainer>(`https://healthylifestyleapi.azurewebsites.net/api/trainer/Update/${id}`,data)
   }
   removeTrainer(id:string){
-    return this.http.delete('https://localhost:7003/api/trainer/Delete/' + id);
+    return this.http.delete('https://healthylifestyleapi.azurewebsites.net/api/trainer/Delete/' + id);
   }
 
   GetTrainerBookedSlot(cat:string){
-    return this.http.get<any>(`https://localhost:7003/api/User/GetBookedSlotByUser/${cat}`)
+    return this.http.get<any>(`https://healthylifestyleapi.azurewebsites.net/api/User/GetBookedSlotByUser/${cat}`)
   }
    
    

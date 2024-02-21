@@ -12,7 +12,7 @@ export class UserService {
   constructor(private http:HttpClient,private Route:Router) { }
   signUp(data:user){
    console.warn(data)
-   return this.http.post('https://localhost:7003/api/User/Create',data);
+   return this.http.post('https://healthylifestyleapi.azurewebsites.net/api/User/Create',data);
   //  subscribe((res) =>{
   //    console.log(res.body)  
   //    if(res.body){
@@ -23,7 +23,7 @@ export class UserService {
   }
   login(data:user){
     console.warn(data);
-    return this.http.get(`https://localhost:7003/api/User/LoginUser?userName=${data.userName}&password=${data.password}`);
+    return this.http.get(`https://healthylifestyleapi.azurewebsites.net/api/User/LoginUser?userName=${data.userName}&password=${data.password}`);
     // .subscribe((result) =>{
     //   // if(result && result.body){
     //   //   console.warn(result.body)
@@ -38,15 +38,15 @@ export class UserService {
   }
 
   BookSlot(data:user,slot:number,trainerName:string){
-   return this.http.post(`https://localhost:7003/api/User/BookSlot?slot=${slot}&trainerName=${trainerName}`,data);
+   return this.http.post(`https://healthylifestyleapi.azurewebsites.net/api/User/BookSlot?slot=${slot}&trainerName=${trainerName}`,data);
   }
 
   AddOrRemoveCart(data:product,userId:number,operation:string){
-    return this.http.put<any>(`https://localhost:7003/api/User/AddRemoveCart/${userId}?operation=${operation === 'Add To Cart' ? 'AddCart' : 'RemoveCart'}`,data);
+    return this.http.put<any>(`https://healthylifestyleapi.azurewebsites.net/api/User/AddRemoveCart/${userId}?operation=${operation === 'Add To Cart' ? 'AddCart' : 'RemoveCart'}`,data);
   }
 
   handleQuantity(data:product | undefined,userId:number,oper:string){
-    return this.http.put<any>(`https://localhost:7003/api/User/QuantityAddRemove/${userId}?oper=${oper}`,data);
+    return this.http.put<any>(`https://healthylifestyleapi.azurewebsites.net/api/User/QuantityAddRemove/${userId}?oper=${oper}`,data);
   }
 
 }
