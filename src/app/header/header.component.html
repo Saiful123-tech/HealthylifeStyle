@@ -1,0 +1,124 @@
+<!-- <div class="Navbar">
+    <div class="left-bar">
+    <h2 class="icon">Healthy</h2>
+    </div>
+    <div class="right-bar"  [ngSwitch]="menuType">
+        <ul class="list" *ngSwitchCase="'default'">
+            <li class="list-item"><a routerLink="/">Home</a></li>
+            <li class="list-item"><a routerLink="trainer">Trainer</a></li>
+            <li class="list-item"><a routerLink="user">User</a></li>
+            <li class="list-item"><a routerLink="admin">Admin</a></li>
+            <li class="list-item"><a routerLink="productDashboard">Prouct</a></li>
+        </ul>
+
+        <ul class="list" *ngSwitchCase="'trainer'">
+            <li class="list-item"><a routerLink="/">Home</a></li>
+            <li class="list-item"><a routerLink="trainer-dashboard">Dashboard</a></li>
+            <li class="list-item"><a>Product</a></li>
+            <li class="list-item"><a routerLink="productDashboard">Prouct</a></li>
+            <li class="list-item"><a (click)="Logout()">Logout</a></li>
+        </ul>
+
+        <ul class="list" *ngSwitchCase="'user'">
+            <li class="list-item"><a routerLink="/">Home</a></li>
+            <li *ngIf="showName" class="list-item"><a>{{this.userName}}</a></li>
+            <li class="list-item"><a routerLink="findtrainer">Find Trainer</a></li>
+            <li class="list-item"><a routerLink="productDashboard">Prouct</a></li>
+            <li class="list-item"><a routerLink="addCart">Add to Cart</a></li>
+            <li class="list-item"><a (click)="Logout()">Logout</a></li>
+        </ul>
+
+        <ul class="list" *ngSwitchCase="'admin'">
+            <li class="list-item"><a routerLink="/">Home</a></li>
+            <li class="list-item"><a routerLink="addProduct">Add Product</a></li>
+            <li class="list-item"><a routerLink="user">User</a></li>
+            <li class="list-item"><a routerLink="admin">Admin</a></li>
+            <li class="list-item"><a routerLink="productDashboard">Prouct</a></li>
+        </ul>
+
+    </div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown" [ngSwitch]="menuType">
+        <ul class="navbar-nav ms-auto " *ngSwitchCase="'default'">
+          <li class="nav-item">
+            <a class="nav-link mx-2 active" aria-current="page" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" routerLink="trainer">Trainer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" routerLink="user">User</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" routerLink="admin">Admin</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link mx-2" routerLink="productDashboard">Product</a>
+          </li>
+        </ul>
+
+
+        <ul class="navbar-nav ms-auto " *ngSwitchCase="'trainer'">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page"  routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="trainer-dashboard">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" (click)="Logout()">Logout</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto " *ngSwitchCase="'user'">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#">{{this.userName}}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="findtrainer">Find Trainer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="productDashboard">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="addCart">Add Cart</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link mx-2" (click)="Logout()">Logout</a>
+              </li>
+
+          </ul>
+
+          <ul class="navbar-nav ms-auto " *ngSwitchCase="'admin'">
+            <li class="nav-item">
+              <a class="nav-link mx-2 active" aria-current="page" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2"routerLink="addProduct">Add Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" routerLink="user">User</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="admin">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" routerLink="productDashboard">Product</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+    </nav>

@@ -1,0 +1,156 @@
+{
+  "trainer": [
+    {
+      "user": "abc@gmail.com",
+      "name": "saiful",
+      "num": "99911112233",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "S@iful123",
+      "cat": "health",
+      "adress": "Farrukhabad",
+      "Image": "ddd",
+      "about": "I am Saifu I am a software Developer",
+      "id": 1
+    },
+    {
+      "user": "abc@gmail.com",
+      "name": "Rohit",
+      "num": "99911112233",
+      "email": "peter@gmail.com",
+      "psw": "1223",
+      "cat": "health",
+      "adress": "dccdc",
+      "Image": "ddd",
+      "about": "cddcdc",
+      "id": 2
+    },
+    {
+      "user": "areena",
+      "name": "saiful",
+      "num": "99911112233",
+      "email": "rohit@gmail.com",
+      "psw": "sssss",
+      "cat": "Gym",
+      "adress": "Agra ",
+      "Image": "dcdcdc",
+      "about": "I am Rohit I am a software Developer",
+      "id": 3
+    },
+    {
+      "user": "abc@gmail.com",
+      "name": "saiful",
+      "num": "99911112233",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "44444",
+      "cat": "Gym",
+      "adress": "dccdc",
+      "Image": "ddd",
+      "about": "I am Saifu I am a software Developer",
+      "id": 4
+    },
+    {
+      "user": "saiful",
+      "name": "Maruti alto",
+      "num": "99911112233",
+      "email": "mohdtalib4010@gmail.com",
+      "psw": "234455",
+      "cat": "health",
+      "adress": "Farrukhabad",
+      "Image": "ddd",
+      "about": "cddcdc",
+      "id": 5
+    },
+    {
+      "user": "abc",
+      "name": "saiful",
+      "num": "99911112233",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "33333",
+      "cat": "yoga",
+      "adress": "Agra ",
+      "Image": "ddd",
+      "about": "I am Saifu I am a software Developer",
+      "id": 7
+    },
+    {
+      "user": "S@iful123",
+      "name": "peter",
+      "num": "99911112233",
+      "email": "peter@gmail.com",
+      "psw": "sjkskj",
+      "cat": "health",
+      "adress": "dccdc",
+      "Image": "ddd",
+      "about": "I am Saifu I am a software Developer",
+      "id": 8
+    },
+    {
+      "user": "abc",
+      "name": "saiful",
+      "num": "99911112233",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "666787",
+      "cat": "health",
+      "adress": "Farrukhabad",
+      "Image": "dcdcdc",
+      "about": "I am Rohit I am a software Developer",
+      "id": 9
+    },
+    {
+      "user": "abc",
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "psw": "Peter1234",
+      "id": 10
+    },
+    {
+      "user": "Aman",
+      "name": "Aman Singh",
+      "num": "7786029231",
+      "email": "aman@gmail.com",
+      "psw": "",
+      "cat": "yoga",
+      "adress": "Kannauj",
+      "Image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxhtmBqlJilp6X2q2XsYxJ9DVYb_F8x17DjIOJcHtT&s",
+      "about": "Ijknxkjdnkdjc ndc dsn dsn dn dnxsdjbjdbdjbjxxbjsxdsjkxsdijbdsjnxdsjkxdsjxbdsjxbhjdbdjbxdhbdhxbhdxbhjdbjdxj",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "user": "areena",
+      "name": "Areema Parveen",
+      "email": "areena@gmail.com",
+      "psw": "Arrena@1234",
+      "id": 1
+    },
+    {
+      "user": "Peter",
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "psw": "Peter@1234",
+      "id": 2
+    },
+    {
+      "user": "saiful",
+      "name": "Saiful Mansoori",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "S@iful1233",
+      "id": 3
+    },
+    {
+      "user": "saiful",
+      "name": "Saiful Mansoori",
+      "email": "saifulmansoori777@gmail.com",
+      "psw": "S@iful1233",
+      "id": 4
+    },
+    {
+      "user": "Naman",
+      "name": "Naman Jain",
+      "email": "naman@gmail.com",
+      "psw": "Naman@123",
+      "id": 5
+    }
+  ]
+}

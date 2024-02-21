@@ -1,0 +1,41 @@
+<div class="container dashboard">
+   <div class="left-part">
+      <div class="image-card">
+         <br>
+         <img *ngIf="this.trainerImage" src="{{this.trainerImage}}" alt="Card image" srcset="">
+       <!-- lkfvmldfkvmdfkvk -->
+      </div>
+      <h2><a href="#">Facebook</a></h2>
+      <h2><a href="#">Linkden</a></h2>
+      <h2><a href="#">Instagram</a></h2>
+   </div>
+   <div class="right-part">
+      <!-- <h1>{{this.trainerName}}</h1> -->
+      <ul class="nav nav-tabs" role="tablist">
+         <li class="nav-item">
+            <a class="nav-link" routerLink="/Update/{{this.trainerId}}">Edit Profile</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" (click)="clickMethod(this.trainerId)">Delete</a>
+         </li>
+         </ul>
+      <hr>
+      <ul class=" details">
+         <li><p><span class="fa fa-user"></span>&nbsp; {{this.trainerName}}</p></li>
+         <li><p><span class="fa fa-phone"></span>&nbsp; {{this.trainerNumber}}</p></li>
+         <li><p><span class="fa fa-envelope-o"></span>&nbsp; {{this.trainerEmail}}</p></li>
+         <li><p><span class="fa fa-address-book-o"></span>&nbsp; {{this.trainerCategory}}</p></li>
+         <li><p><span class="fa fa-address-book-o"></span>&nbsp; {{this.trainerAddress}}</p></li>
+       </ul>
+       <br><br>
+       <div class="About">
+         <h1>About Me</h1>
+         <p class=""><i>{{this.trainerAbout}}</i></p>
+       </div>
+   </div>
+   
+</div>
+<div class="container-fluid footer"><br><br>
+  <P> Copyright @ 2020, by mtm4010</P>
+
+</div>

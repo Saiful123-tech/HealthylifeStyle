@@ -1,0 +1,72 @@
+<form *ngIf="!showLogin" style="max-width:500px;margin:auto" #trainerSignUp="ngForm" (ngSubmit)="SignUp(trainerSignUp.value)">
+  <br>
+    <h2>Register Form</h2>
+    <br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="user" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="fullname" name="name" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-phone icon"></i>
+      <input class="input-field" type="text" placeholder="number" name="num" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" placeholder="Email" name="email" ngModel>
+    </div>
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="password" placeholder="Password" name="psw" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+     <select class="input-field" type="text" placeholder="Category" name="cat" ngModel>
+     <option>Gym</option>
+     <option>health</option>
+     <option>yoga</option>
+     </select>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-address-book-o icon"></i>
+      <input class="input-field" type="text" placeholder="enter adress" name="adress" ngModel>
+    </div>
+    <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="text" placeholder="Image" name="image" ngModel>
+      </div>
+  
+      <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="about" name="about" ngModel>
+    </div>
+    <button type="submit" name='submit' class="btn">Register</button>
+    <a class="auth-toggle-link" (click)="openLogin()">Aready Account? Click to login</a>
+  </form>
+
+
+
+
+  <form *ngIf="showLogin" style="max-width:500px;margin:auto" #trainerLogin="ngForm" (ngSubmit)="Login(trainerLogin.value)">
+    <br>
+    <h2>Login Form</h2>
+    <br>
+    <p class="error-message">{{this.authError}}</p>
+    <p class="success-message">{{this.showMessage}}</p>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="user" ngModel>
+    </div>
+    
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="Password" name="psw" ngModel>
+    </div>
+    <button type="submit" name='submit' class="btn">Register</button>
+    <a class="auth-toggle-link"(click)="openSignUp()">Dont have Account? Click to SignUp</a>
+  </form>

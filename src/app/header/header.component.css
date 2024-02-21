@@ -1,0 +1,23 @@
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #161616;
+    color:antiquewhite;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 40px;
+    opacity: 0.9;
+}
+
+.list{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    margin-left:820px;
+}
+.list-item{
+   padding:10px;
+}
+.list-item:hover{
+    color:blueviolet;
+}

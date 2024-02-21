@@ -1,0 +1,32 @@
+<div class="container" *ngIf="!showChildComponent">
+<form style="max-width:500px;margin:auto" *ngIf="!showChildComponent" #Selecttrainer="ngForm" (ngSubmit)="Selection(Selecttrainer.value)" >
+    <h2>Select Trainer</h2>
+
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+     <select class="input-field" type="text" placeholder="Category" name="cat" ngModel>
+     <option>Gym</option>
+     <option>health</option>
+     <option>yoga</option>
+     </select>
+    </div>
+    
+    <button type="submit" name='submit' class="btn">Select</button>
+  </form>
+  <div class="row">
+    
+  <ul  *ngFor="let item of trainerList">     
+    <li class="list-item"><a (click)="getId(item.id)">{{item.name}}</a></li>
+    <button class="btn btn-sm btn-primary" (click)="bookAppoitment(item)">Book Appotment</button>
+    <div *ngIf="trainerbookedName === item.name">
+      <app-book-appoitment [trainer]="trainerbooked"></app-book-appoitment>
+    </div>
+    <hr>
+  </ul>
+  
+</div>
+
+
+</div>
+<button class="bg bg-primary bg-lg" *ngIf="showChildComponent"  (click)="back()" >Back</button>
+   <app-trainer-dashboard *ngIf="showChildComponent" [model]="trainerItem"></app-trainer-dashboard> 

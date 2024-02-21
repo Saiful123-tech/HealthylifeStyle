@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/eb51882f-1afd-4025-b4fb-617c99f2372a/resourceGroups/Healthy/providers/Microsoft.Web/sites/HealthyWebClient",
+    "appService.deploySubpath": "."
+}

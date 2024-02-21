@@ -1,0 +1,12 @@
+<div class="add-product">
+    <h1>Add New Product</h1>
+    <p *ngIf="addProductMessage !== undefined" class="alert alert-success" role="alert">{{ addProductMessage}}</p>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
+        <input class="form-input" ngModel type="text" name="productName" placeholder="Enter Product Name">
+        <input class="form-input" ngModel type="text" name="productPrice" placeholder="Enter Product Price">
+        <textarea class="form-input" type="text" ngModel name="productDescription" placeholder="Enter description"></textarea>
+        <input class="form-input" ngModel type="text" name="productImage" placeholder="Enter Product Image URL">
+        <!-- <input type="file" ngModel name="productImage" (change)="onFileSelected($event)"> -->
+        <button class="form-button">Add Product</button>
+    </form>
+</div>

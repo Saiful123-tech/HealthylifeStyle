@@ -1,0 +1,17 @@
+<div class="container">
+    <div *ngIf="showAlert" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{showMessage}}</strong>
+        <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let slot of timeSlotByTrainer">
+            <!-- <ul>
+            <li *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">{{i}}</li> 
+            </ul>  -->
+            <br>
+           
+            <button [disabled]="slot.slotbooked" class="btn btn-sm btn-success" (click)="bookedSlot(timeSlotByTrainer.indexOf(slot)+1)">{{slot.key}}</button>
+            <br>
+        </div>
+    </div>
+</div>

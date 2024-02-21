@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+/* *{
+    padding:0;
+    margin:0;
+ box-sizing: border-box;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald:wght@200&display=swap');
+.error-message{
+    color:red;
+}
+.success-message{
+  color:green;
+}

@@ -1,0 +1,16 @@
+<form style="max-width:500px;margin:auto" #userLogin="ngForm" (ngSubmit)="Login(userLogin.value)">
+    <br>
+    <h2>Login Form</h2>
+    <br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="name" name="name" ngModel>
+    </div>
+    
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="Password" name="password" ngModel>
+    </div>
+    <button type="submit" name='submit' class="btn">Register</button>
+  </form>

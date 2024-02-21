@@ -1,0 +1,46 @@
+<form *ngIf="!showLogin" style="max-width:500px;margin:auto" #userSignUp="ngForm" (ngSubmit)="SignUp(userSignUp.value)">
+  <br>
+    <h2>Register Form</h2>
+    <br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="userName" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="fullname" name="name" ngModel>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" placeholder="Email" name="email" ngModel>
+    </div>
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="password" placeholder="Password" name="password" ngModel>
+    </div>
+    <button type="submit" name='submit' class="btn">Register</button>
+    <a class="auth-toggle-link" (click)="openLogin()">Aready Account? Click to login</a>
+  </form>
+
+
+
+
+  <form *ngIf="showLogin" style="max-width:500px;margin:auto" #userLogin="ngForm" (ngSubmit)="Login(userLogin.value)">
+    <br>
+    <h2>Login Form</h2>
+    <br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="userName" ngModel>
+    </div>
+    
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="Password" name="password" ngModel>
+    </div>
+    <button type="submit" name='submit' class="btn">Login</button>
+    <a class="auth-toggle-link"(click)="openSignUp()">Dont have Account? Click to SignUp</a>
+  </form>
+

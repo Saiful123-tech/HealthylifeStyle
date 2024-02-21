@@ -1,0 +1,49 @@
+<p class="success-message">{{this.showMessage}}</p>
+<form style="max-width:500px;margin:auto" #trainerUpdate="ngForm" (ngSubmit)="UpdateData(trainerUpdate.value)">
+  <br>
+    <h2>Update Form</h2>
+    <br>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="Username" name="user" ngModel="{{trainerData?.user}}">
+    </div>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+      <input class="input-field" type="text" placeholder="fullname" name="name" ngModel="{{trainerData?.name}}">
+    </div>
+    <div class="input-container">
+      <i class="fa fa-phone icon"></i>
+      <input class="input-field" type="text" placeholder="number" name="num" ngModel="{{trainerData?.num}}">
+    </div>
+    <div class="input-container">
+      <i class="fa fa-envelope icon"></i>
+      <input class="input-field" type="text" placeholder="Email" name="email" ngModel="{{trainerData?.email}}">
+    </div>
+    
+    <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="Password" name="psw" ngModel="{{trainerData?.psw}}">
+    </div>
+    <div class="input-container">
+      <i class="fa fa-user icon"></i>
+     <select class="input-field" type="text" placeholder="Category" name="cat" ngModel="{{trainerData?.cat}}">
+     <option>Gym</option>
+     <option>health</option>
+     <option>yoga</option>
+     </select>
+    </div>
+    <div class="input-container">
+      <i class="fa fa-address-book-o icon"></i>
+      <input class="input-field" type="text" placeholder="enter adress" name="adress" ngModel="{{trainerData?.adress}}">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="text" placeholder="Image" name="image" ngModel="{{trainerData?.image}}">
+      </div>
+  
+      <div class="input-container">
+      <i class="fa fa-key icon"></i>
+      <input class="input-field" type="text" placeholder="about" name="about" ngModel="{{trainerData?.about}}">
+    </div>
+    <button type="submit" name='submit' class="btn">Update</button>
+  </form>
